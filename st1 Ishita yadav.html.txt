@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GitHub Registration Form (HTML Only)</title>
+</head>
+<body>
+
+    <h1>Join GitHub</h1>
+    <p>Create your personal account</p>
+
+    <hr>
+
+    <form action="/register.php" method="POST">
+
+        <div>
+            <label for="username">Username</label><br>
+            <input 
+                type="text" 
+                id="username" 
+                name="username" 
+                placeholder="Ex: git_ishita" 
+                required 
+                maxlength="39"
+                title="Username is required. Must be unique."
+            >
+        </div>
+
+        <br>
+
+        <div>
+            <label for="email">Email address</label><br>
+            <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                placeholder="Ex:yadavishita63@.com" 
+                required 
+                title="A valid email is required. The browser will check for a valid format."
+            >
+        </div>
+
+        <br>
+
+        <div>
+            <label for="password">Password</label><br>
+            <input 
+                type="password" 
+                id="password" 
+                name="password" 
+                placeholder="Create a strong password" 
+                required 
+                minlength="8"
+                title="Password must be at least 8 characters long."
+            >
+        </div>
+
+        <br>
+
+        <div>
+            <button type="submit">Sign up for GitHub</button>
+        </div>
+
+    </form>
+
+    <hr>
+
+    <p>
+        By clicking "Sign up for GitHub", you agree to our 
+        <a href="#">Terms of Service</a> and 
+        <a href="#">Privacy Statement</a>.
+    </p>
+
+</body>
+</html>
